@@ -20,7 +20,7 @@ Project ini dibuat untuk **tugas dan pembelajaran**.
 ## 📸 Tampilan Aplikasi
 
 ### Halaman Login
-![image alt](https://github.com/8dalpan/Izin-siswa-menggunakan-jsp/blob/main/login.png?raw=true)
+![alt text](https://github.com/8dalpan/Izin-siswa-menggunakan-jsp/blob/c4b38082f9bb441d5ef7335dcebee1e694abd329/login.png)
 
 ### Dashboard Admin
 ![Dashboard Admin](screenshots/dashboard_admin.png)
@@ -76,6 +76,7 @@ Project ini digunakan untuk **keperluan pembelajaran**.
 ```
 
 ---
+
 
 
 
