@@ -1,123 +1,62 @@
 
-````md
-# 📄 Sistem Informasi Izin Siswa (JSP & MySQL)
+---
 
-![Java](https://img.shields.io/badge/Java-JSP-orange)
-![MySQL](https://img.shields.io/badge/Database-MySQL-blue)
-![Status](https://img.shields.io/badge/Status-Completed-green)
+```md
+# 📄 Sistem Informasi Izin Siswa
 
-Aplikasi **Sistem Informasi Izin Siswa** berbasis **Java JSP dan MySQL** untuk mengelola pengajuan izin siswa secara terkomputerisasi.  
-Project ini dibuat untuk **pembelajaran dan tugas kuliah**.
+Aplikasi **Sistem Informasi Izin Siswa** berbasis **Java JSP & MySQL** untuk mengelola proses perizinan siswa secara terkomputerisasi.  
+Project ini dibuat untuk **tugas dan pembelajaran**.
 
 ---
 
-## 🎯 Fitur Utama
-
-- Login & Logout
+## 🎯 Fitur
+- Login Admin & Login Siswa (menu terpisah)
 - Pengajuan izin siswa
-- Persetujuan izin oleh admin/guru
+- Persetujuan izin oleh admin
 - Status izin (Pending / Approve / Reject)
 
 ---
 
 ## 🛠️ Teknologi
-
-- Java JSP & Servlet  
-- MySQL  
-- Apache Tomcat  
-- NetBeans IDE  
-- HTML & CSS  
-
----
-
-## 📸 Tampilan Website
-
-> Berikut beberapa tampilan dari aplikasi:
-
-### Halaman Login
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/b8719b3f-e6bd-41ab-b0db-a181271e4604" />
-
-
-### Dashboard
-![Dashboard](screenshots/dashboard.png)
-
-### Data Izin
-![Data Izin](screenshots/data_izin.png)
+- Java JSP
+- MySQL
+- Apache Tomcat
+- NetBeans IDE
 
 ---
 
 ## 🗄️ Database
+**Nama Database:** `db_izin`
 
-### Nama Database
-```sql
-db_izin
-````
+**Tabel Utama:**
+- `users` (admin)
+- `siswa`
+- `tbl_guru`
+- `izin_siswa`
 
-### Tabel Utama
-
-* `users`
-* `siswa`
-* `tbl_guru`
-* `izin_siswa`
-
-> Seluruh data yang digunakan adalah **data dummy (contoh)**.
+> Data yang digunakan adalah **data dummy (contoh)**.
 
 ---
 
 ## ⚙️ Cara Menjalankan
+1. Import database `db_izin.sql` ke phpMyAdmin
+2. Jalankan project di Apache Tomcat
+3. Akses melalui browser:
+```
 
-1. Jalankan **XAMPP** dan aktifkan **MySQL**
-2. Buka `phpMyAdmin`
-3. Buat database `db_izin`
-4. Import file:
+[http://localhost:8080/izinsiswa](http://localhost:8080/izinsiswa)
 
-   ```
-   database/db_izin.sql
-   ```
-5. Jalankan project di **Apache Tomcat**
-6. Akses melalui browser:
-
-   ```
-   http://localhost:8080/izinsiswa
-   ```
+```
 
 ---
 
 ## 👨‍💻 Author
-
 **Dalpan Rohi**
 
 ---
 
 ## 📄 License
-
-Project ini dibuat untuk **Educational Purpose**.
-
+Project ini digunakan untuk **keperluan pembelajaran**.
 ```
 
 ---
-
-## 📌 Catatan Penting (WAJIB)
-Buat folder ini di project kamu:
-```
-
-screenshots/
-
-```
-
-Isi dengan file:
-- `login.png`
-- `dashboard.png`
-- `data_izin.png`
-
-Jika nama file **tidak sama**, gambar **tidak akan muncul**.
-
----
-
-Kalau mau, saya bisa:
-- Menyesuaikan README dengan **foto asli websitemu**
-- Membuat versi **lebih singkat lagi**
-- Mengecek **apakah gambar sudah tampil di GitHub**
-
-Tinggal bilang 👍
-```
