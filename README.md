@@ -42,54 +42,7 @@ Project ini dibuat untuk **pembelajaran dan tugas kuliah**.
 
 ---
 
-## 🗂️ Struktur Project
 
-```
-
-izinsiswa/
-│
-├── Web Pages/
-│   ├── META-INF/
-│   ├── WEB-INF/
-│   │   └── web.xml
-│   │
-│   ├── css/
-│   │   ├── index.css
-│   │   └── style.css
-│   │
-│   ├── database/
-│   │   └── db_izin.sql
-│   │
-│   ├── admin.jpg
-│   │
-│   ├── add_guru.jsp
-│   ├── add_siswa.jsp
-│   ├── dashboard_siswa.jsp
-│   ├── data_guru.jsp
-│   ├── data_izin.jsp
-│   ├── data_siswa.jsp
-│   ├── delete_guru.jsp
-│   ├── delete_siswa.jsp
-│   ├── edit_guru.jsp
-│   ├── edit_siswa.jsp
-│   ├── form_izin.jsp
-│   ├── index.jsp
-│   ├── izin_list_siswa.jsp
-│   ├── koneksi.jsp
-│   ├── laporan.jsp
-│   ├── login.jsp
-│   ├── logout.jsp
-│   ├── pengaturan.jsp
-│   └── proseslogin.jsp
-│
-├── src/
-│   └── (Java package / servlet jika ada)
-│
-├── nbproject/
-├── build/
-├── build.xml
-
-````
 
 ---
 
@@ -162,4 +115,5 @@ Project ini dibuat untuk **Educational Purpose** dan bebas digunakan untuk pembe
 ```
 
 ---
+
 
