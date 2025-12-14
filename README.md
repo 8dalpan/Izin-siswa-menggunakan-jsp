@@ -1,6 +1,3 @@
-Siap 👍
-Berikut **ISI `README.md` SIAP COPY–PASTE** sesuai **project kamu (Sistem Informasi Izin – JSP & MySQL)**.
-👉 Langsung salin semuanya ke **README.md** lalu **Commit**.
 
 ---
 
@@ -57,8 +54,7 @@ db_izin
 
 * `users`
 * `siswa`
-* `guru`
-* `izin`
+* `tbl_guru`
 * `izin_siswa`
 
 > Seluruh data yang digunakan adalah **data dummy (contoh)**.
@@ -115,5 +111,6 @@ Project ini dibuat untuk **Educational Purpose** dan bebas digunakan untuk pembe
 ```
 
 ---
+
 
 
