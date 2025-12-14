@@ -17,6 +17,22 @@ Project ini dibuat untuk **tugas dan pembelajaran**.
 
 ---
 
+## 📸 Tampilan Aplikasi
+
+### Halaman Login
+![Login](screenshots/login.png)
+
+### Dashboard Admin
+![Dashboard Admin](screenshots/dashboard_admin.png)
+
+### Form Pengajuan Izin
+![Form Izin](screenshots/form_izin.png)
+
+### Data & Status Izin
+![Data Izin](screenshots/data_izin.png)
+
+
+
 ## 🛠️ Teknologi
 - Java JSP
 - MySQL
@@ -60,4 +76,5 @@ Project ini digunakan untuk **keperluan pembelajaran**.
 ```
 
 ---
+
 
