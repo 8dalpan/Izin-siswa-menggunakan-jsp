@@ -1,45 +1,48 @@
 
----
-
-```md
+````md
 # 📄 Sistem Informasi Izin Siswa (JSP & MySQL)
 
 ![Java](https://img.shields.io/badge/Java-JSP-orange)
 ![MySQL](https://img.shields.io/badge/Database-MySQL-blue)
 ![Status](https://img.shields.io/badge/Status-Completed-green)
 
-Project ini merupakan **Sistem Informasi Izin Siswa** berbasis **Java JSP dan MySQL** yang digunakan untuk mengelola data pengajuan izin siswa secara terstruktur dan terkomputerisasi.  
+Aplikasi **Sistem Informasi Izin Siswa** berbasis **Java JSP dan MySQL** untuk mengelola pengajuan izin siswa secara terkomputerisasi.  
 Project ini dibuat untuk **pembelajaran dan tugas kuliah**.
 
 ---
 
-## 🎯 Fitur Aplikasi
+## 🎯 Fitur Utama
 
-### 👤 User
 - Login & Logout
-- Mengajukan izin siswa
-- Melihat status izin (Pending / Approve / Reject)
-
-### 🧑‍🏫 Admin / Guru
-- Login admin
-- Melihat daftar izin siswa
-- Approve / Reject izin
-- Filter data izin
+- Pengajuan izin siswa
+- Persetujuan izin oleh admin/guru
+- Status izin (Pending / Approve / Reject)
 
 ---
 
-## 🛠️ Teknologi yang Digunakan
+## 🛠️ Teknologi
 
-- **Java JSP**
-- **Servlet**
-- **MySQL**
-- **Apache Tomcat**
-- **NetBeans IDE**
-- **HTML, CSS**
+- Java JSP & Servlet  
+- MySQL  
+- Apache Tomcat  
+- NetBeans IDE  
+- HTML & CSS  
 
 ---
 
+## 📸 Tampilan Website
 
+> Berikut beberapa tampilan dari aplikasi:
+
+### Halaman Login
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/b8719b3f-e6bd-41ab-b0db-a181271e4604" />
+
+
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### Data Izin
+![Data Izin](screenshots/data_izin.png)
 
 ---
 
@@ -61,40 +64,22 @@ db_izin
 
 ---
 
-## ⚙️ Cara Menjalankan Project
+## ⚙️ Cara Menjalankan
 
-### 1️⃣ Import Database
-
-1. Jalankan **XAMPP**
-2. Aktifkan **MySQL**
-3. Buka `http://localhost/phpmyadmin`
-4. Buat database `db_izin`
-5. Import file:
+1. Jalankan **XAMPP** dan aktifkan **MySQL**
+2. Buka `phpMyAdmin`
+3. Buat database `db_izin`
+4. Import file:
 
    ```
    database/db_izin.sql
    ```
-
----
-
-### 2️⃣ Jalankan Aplikasi
-
-1. Buka project di **NetBeans**
-2. Jalankan di **Apache Tomcat**
-3. Akses melalui browser:
+5. Jalankan project di **Apache Tomcat**
+6. Akses melalui browser:
 
    ```
    http://localhost:8080/izinsiswa
    ```
-
----
-
-## 📚 Tujuan Project
-
-* Latihan pengembangan aplikasi web berbasis Java
-* Memahami konsep CRUD
-* Penerapan database relasional
-* Dokumentasi project menggunakan GitHub
 
 ---
 
@@ -106,11 +91,33 @@ db_izin
 
 ## 📄 License
 
-Project ini dibuat untuk **Educational Purpose** dan bebas digunakan untuk pembelajaran.
+Project ini dibuat untuk **Educational Purpose**.
 
 ```
 
 ---
 
+## 📌 Catatan Penting (WAJIB)
+Buat folder ini di project kamu:
+```
 
+screenshots/
 
+```
+
+Isi dengan file:
+- `login.png`
+- `dashboard.png`
+- `data_izin.png`
+
+Jika nama file **tidak sama**, gambar **tidak akan muncul**.
+
+---
+
+Kalau mau, saya bisa:
+- Menyesuaikan README dengan **foto asli websitemu**
+- Membuat versi **lebih singkat lagi**
+- Mengecek **apakah gambar sudah tampil di GitHub**
+
+Tinggal bilang 👍
+```
