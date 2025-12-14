@@ -1,0 +1,108 @@
+
+/* =========================================================
+   LAYOUT DASAR
+========================================================= */
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+    background: #f4f6ff;
+}
+
+.sidebar {
+    width: 240px;
+    background: #0a0e2e;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.nav a {
+    display: block;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.nav a.active {
+    background: #0b4bff;
+}
+
+/* =========================================================
+   MAIN AREA
+========================================================= */
+.main {
+    flex: 1;
+    padding: 25px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.search {
+    width: 280px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+/* =========================================================
+   CARDS (STATISTIK RINGKAS)
+========================================================= */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+}
+
+.card .label {
+    font-size: 14px;
+    color: #777;
+}
+
+.card .num {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* =========================================================
+   CONTENT GRID (2 KOLOM: CHART & JENIS IZIN)
+========================================================= */
+.content-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.box,
+.small-box {
+    background: white;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+}
+
+.list-jenis li {
+    padding: 6px 0;
+}
