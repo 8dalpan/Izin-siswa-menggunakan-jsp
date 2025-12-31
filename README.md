@@ -8,6 +8,7 @@ Project ini dibuat untuk **keperluan tugas dan pembelajaran**.
 
 ## 🎯 Fitur Utama
 - Login Admin dan Siswa
+- ![Alt Text](screenshots/login.png)
 - Manajemen Data Siswa
 - Manajemen Data Guru
 - Pengajuan izin siswa
@@ -83,4 +84,5 @@ Dalpan Rohi
 
 ## 📄 License
 Project ini dibuat dan digunakan untuk **keperluan pembelajaran**.
+
 
