@@ -10,9 +10,9 @@ Project ini dibuat untuk **keperluan tugas dan pembelajaran**.
 - Login Admin dan Siswa
 - ![Alt Text](screenshots/login.png)
 - Manajemen Data Siswa
-- ![Alt Text](screenshots/data siswa.png)
+- ![Alt Text](screenshots/datasiswa.png)
 - Manajemen Data Guru
-- ![Alt Text](screenshots/data guru.png)
+- ![Alt Text](screenshots/dataguru.png)
 - Pengajuan izin siswa
 - Persetujuan izin oleh admin
 - Status izin (Pending / Disetujui / Ditolak)
@@ -86,6 +86,7 @@ Dalpan Rohi
 
 ## 📄 License
 Project ini dibuat dan digunakan untuk **keperluan pembelajaran**.
+
 
 
 
