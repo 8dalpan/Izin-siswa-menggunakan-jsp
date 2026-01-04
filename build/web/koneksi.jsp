@@ -8,7 +8,7 @@
         conn = DriverManager.getConnection(
             "jdbc:mysql://localhost:3306/db_izin",
             "root",
-            "27102005"     
+            ""     
         );
 
         //out.println("Koneksi berhasil!");

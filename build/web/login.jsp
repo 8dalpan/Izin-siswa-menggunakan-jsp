@@ -20,8 +20,6 @@
 
         <button type="submit" class="login-btn">Login</button>
     </form>
-
-    <a href="register.jsp" class="login-link">Lupa Password</a>
 </div>
 
 </body>

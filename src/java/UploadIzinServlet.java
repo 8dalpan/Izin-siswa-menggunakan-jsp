@@ -54,7 +54,7 @@ public class UploadIzinServlet extends HttpServlet {
             Connection conn = DriverManager.getConnection(
                 "jdbc:mysql://localhost:3306/db_izin",
                 "root",
-                "27102005"
+                ""
             );
 
             PreparedStatement ps = conn.prepareStatement(

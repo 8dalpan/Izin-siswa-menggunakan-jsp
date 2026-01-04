@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Dec 14, 2025 at 06:22 AM
+-- Generation Time: Dec 14, 2025 at 12:51 PM
 -- Server version: 10.11.13-MariaDB-0ubuntu0.24.04.1
 -- PHP Version: 8.3.6
 
@@ -22,24 +22,6 @@ SET time_zone = "+00:00";
 --
 CREATE DATABASE IF NOT EXISTS `db_izin` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 USE `db_izin`;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `izin`
---
-
-DROP TABLE IF EXISTS `izin`;
-CREATE TABLE `izin` (
-  `id_izin` int(11) NOT NULL,
-  `id_user` int(11) NOT NULL,
-  `jenis_izin` enum('keluar','masuk') NOT NULL,
-  `alasan` text NOT NULL,
-  `waktu_keluar` datetime DEFAULT NULL,
-  `waktu_masuk` datetime DEFAULT NULL,
-  `status` enum('pending','disetujui','ditolak') DEFAULT 'pending',
-  `dibuat_pada` timestamp NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -66,23 +48,8 @@ CREATE TABLE `izin_siswa` (
 --
 
 INSERT INTO `izin_siswa` (`id_izin`, `id_siswa`, `jenis_izin`, `alasan`, `tgl_mulai`, `tgl_kembali`, `status`, `waktu_pengajuan`, `waktu_persetujuan`, `bukti`) VALUES
-(15, 4, 'Sakit', 'adad', '2025-12-25 00:00:00', '2025-12-26 00:00:00', 'disetujui', '2025-12-13 23:09:06', '2025-12-13 23:18:46', '1765642146714_esteh.jpg'),
-(16, 4, 'Sakit', 'dada', '2025-12-24 00:00:00', '2025-12-23 00:00:00', 'disetujui', '2025-12-13 23:23:18', '2025-12-13 23:23:47', '1765642998906_esteh.jpg');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `log_izin`
---
-
-DROP TABLE IF EXISTS `log_izin`;
-CREATE TABLE `log_izin` (
-  `id_log` int(11) NOT NULL,
-  `id_izin` int(11) NOT NULL,
-  `aksi` enum('buat','setujui','tolak','keluar','masuk') NOT NULL,
-  `waktu` timestamp NULL DEFAULT current_timestamp(),
-  `keterangan` text DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+(18, 8, 'Sakit', 'mencret', '2025-12-14 00:00:00', '2025-12-15 00:00:00', 'disetujui', '2025-12-14 15:26:15', '2025-12-14 15:26:59', '1765700775474_golang.pdf'),
+(19, 8, 'Pulang', 'cepirit', '2025-12-15 00:00:00', '2025-12-16 00:00:00', 'disetujui', '2025-12-14 16:11:20', '2025-12-14 16:11:41', '1765703480762_Kisi - kisi UTS_Algoritma Struktur Data.pdf');
 
 -- --------------------------------------------------------
 
@@ -105,7 +72,8 @@ CREATE TABLE `siswa` (
 --
 
 INSERT INTO `siswa` (`id_siswa`, `id_user`, `nama`, `password`, `nis`, `kelas`) VALUES
-(4, NULL, 'kupil ali', '241091700119', '241091700119', '12-A');
+(8, NULL, 'amril', '123', '123', '10-A'),
+(9, NULL, 'ajib munawar', '1212', '1212', '8-C');
 
 -- --------------------------------------------------------
 
@@ -130,7 +98,9 @@ CREATE TABLE `tbl_guru` (
 
 INSERT INTO `tbl_guru` (`id_guru`, `nama_guru`, `nip`, `mapel`, `jenis_kelamin`, `no_hp`, `alamat`) VALUES
 (9, 'Imam', '1283291', 'matematika', 'Laki-laki', '0828123', 'walantaka'),
-(10, 'siska', '2101912812', 'basis data', 'Laki-laki', '0986762122', 'serang');
+(10, 'siska', '2101912812', 'basis data', 'Laki-laki', '0986762122', 'serang'),
+(11, 'ali', '123388', 'PJOK', 'Laki-laki', '086845640', 'sindang sari'),
+(13, 'robi', '23422', 'fisika', 'Laki-laki', '094828347', 'cikeusal');
 
 -- --------------------------------------------------------
 
@@ -153,18 +123,11 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id_user`, `nama`, `username`, `password`, `role`, `created_at`) VALUES
-(1, 'Administrator', 'admin', 'admin', 'admin', '2025-12-12 00:26:11');
+(5, 'Administrator', 'admin', '123', 'admin', '2025-12-14 07:47:31');
 
 --
 -- Indexes for dumped tables
 --
-
---
--- Indexes for table `izin`
---
-ALTER TABLE `izin`
-  ADD PRIMARY KEY (`id_izin`),
-  ADD KEY `id_user` (`id_user`);
 
 --
 -- Indexes for table `izin_siswa`
@@ -172,13 +135,6 @@ ALTER TABLE `izin`
 ALTER TABLE `izin_siswa`
   ADD PRIMARY KEY (`id_izin`),
   ADD KEY `id_siswa` (`id_siswa`);
-
---
--- Indexes for table `log_izin`
---
-ALTER TABLE `log_izin`
-  ADD PRIMARY KEY (`id_log`),
-  ADD KEY `id_izin` (`id_izin`);
 
 --
 -- Indexes for table `siswa`
@@ -207,62 +163,38 @@ ALTER TABLE `users`
 --
 
 --
--- AUTO_INCREMENT for table `izin`
---
-ALTER TABLE `izin`
-  MODIFY `id_izin` int(11) NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT for table `izin_siswa`
 --
 ALTER TABLE `izin_siswa`
-  MODIFY `id_izin` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
-
---
--- AUTO_INCREMENT for table `log_izin`
---
-ALTER TABLE `log_izin`
-  MODIFY `id_log` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_izin` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `siswa`
 --
 ALTER TABLE `siswa`
-  MODIFY `id_siswa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_siswa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `tbl_guru`
 --
 ALTER TABLE `tbl_guru`
-  MODIFY `id_guru` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id_guru` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- Constraints for dumped tables
 --
 
 --
--- Constraints for table `izin`
---
-ALTER TABLE `izin`
-  ADD CONSTRAINT `izin_ibfk_1` FOREIGN KEY (`id_user`) REFERENCES `users` (`id_user`);
-
---
 -- Constraints for table `izin_siswa`
 --
 ALTER TABLE `izin_siswa`
   ADD CONSTRAINT `izin_siswa_ibfk_1` FOREIGN KEY (`id_siswa`) REFERENCES `siswa` (`id_siswa`) ON DELETE CASCADE;
-
---
--- Constraints for table `log_izin`
---
-ALTER TABLE `log_izin`
-  ADD CONSTRAINT `log_izin_ibfk_1` FOREIGN KEY (`id_izin`) REFERENCES `izin` (`id_izin`);
 
 --
 -- Constraints for table `siswa`
